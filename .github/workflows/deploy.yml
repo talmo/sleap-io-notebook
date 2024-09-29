@@ -31,7 +31,10 @@ jobs:
         shell: bash -l {0}
         run: |
           cp README.md content
-          jupyter lite build --contents content --output-dir dist
+          jupyter lite build \
+            --contents content \
+            --output-dir dist \
+            --XeusAddon.environment_file=environment.yml 
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
