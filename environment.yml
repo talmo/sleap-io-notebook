@@ -6,4 +6,5 @@ dependencies:
   - python=3.11
   - xeus-python
   - ipycanvas
-  - conda-forge::sleap-io=0.1.9
+  # - conda-forge::sleap-io=0.1.9
+  - conda-forge::sleap-io
